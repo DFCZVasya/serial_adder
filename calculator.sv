@@ -11,8 +11,10 @@ input logic clk_in;
 //////////////////////////////
 
 logic prev_flag = 0;
+logic [9:0] out_num = 0;
 logic [9:0] num = 0;
 logic [9:0] answ = 0;
+
 
 keyboard board(line, column, flag, out, clk_in);
 
@@ -58,8 +60,7 @@ always @(posedge clk) begin
      SECOND_NUM:
         if(flag == 0 && prev_flag == 1 && out == 7) begin
              next_state = EQUAL;
-             answ = answ + num;
-             num = 0;
+             num = answ + num;
          end
          else if (flag == 0 && prev_flag == 1) begin
              num = num * 10;
@@ -75,6 +76,7 @@ always @(posedge clk) begin
       EQUAL:
         if(flag == 0 && prev_flag == 1) begin
             next_state = FIRST_NUM;
+            num = 0;
             answ = 0;
       end
         
