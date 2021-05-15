@@ -1,12 +1,12 @@
 `include "keyboard.sv"
 
 //////////////////////////////
-module calculator(line, column, flag, out, display, clk_in);
+module calculator(line, column, flag, out, num_on_display, clk_in);
 output [3:0] line; 
 input [3:0]column; 
 output flag;
 output [4:0] out;
-output [20:0] display; 
+output [20:0] num_on_display; 
 input logic clk_in;
 //////////////////////////////
 
