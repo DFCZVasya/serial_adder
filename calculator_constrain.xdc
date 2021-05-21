@@ -1,0 +1,46 @@
+set_property IOSTANDARD LVCMOS33 [get_ports *]
+
+set_property PACKAGE_PIN D1 [get_ports out[0]]
+set_property PACKAGE_PIN B4 [get_ports out[1]]
+set_property PACKAGE_PIN A7 [get_ports out[2]]
+set_property PACKAGE_PIN B9 [get_ports out[3]]
+set_property PACKAGE_PIN B14 [get_ports out[4]]
+
+set_property PACKAGE_PIN E16 [get_ports flag]
+
+set_property PACKAGE_PIN P10 [get_ports line[0]]
+set_property PACKAGE_PIN R11 [get_ports line[1]]
+set_property PACKAGE_PIN T12 [get_ports line[2]]
+set_property PACKAGE_PIN R12 [get_ports line[3]]
+
+set_property PACKAGE_PIN T13 [get_ports column[0]]
+set_property PACKAGE_PIN R13 [get_ports column[1]]
+set_property PACKAGE_PIN T14 [get_ports column[2]]
+set_property PACKAGE_PIN P14 [get_ports column[3]]
+
+set_property PACKAGE_PIN F5 [get_ports clk_in]
+
+
+set_property PACKAGE_PIN C16 [get_ports {first[0]}]
+set_property PACKAGE_PIN D15 [get_ports {first[1]}]
+set_property PACKAGE_PIN E15 [get_ports {first[2]}]
+set_property PACKAGE_PIN A14 [get_ports {first[3]}]
+set_property PACKAGE_PIN B15 [get_ports {first[4]}]
+set_property PACKAGE_PIN B16 [get_ports {first[5]}]
+set_property PACKAGE_PIN A15 [get_ports {first[6]}]
+set_property PACKAGE_PIN B11 [get_ports {second[0]}]
+set_property PACKAGE_PIN A12 [get_ports {second[1]}]
+set_property PACKAGE_PIN A13 [get_ports {second[2]}]
+set_property PACKAGE_PIN C8 [get_ports {second[3]}]
+set_property PACKAGE_PIN A9 [get_ports {second[4]}]
+set_property PACKAGE_PIN B10 [get_ports {second[5]}]
+set_property PACKAGE_PIN A10 [get_ports {second[6]}]
+set_property PACKAGE_PIN B6 [get_ports {third[0]}]
+set_property PACKAGE_PIN C7 [get_ports {third[1]}]
+set_property PACKAGE_PIN A8 [get_ports {third[2]}]
+set_property PACKAGE_PIN A3 [get_ports {third[3]}]
+set_property PACKAGE_PIN A4 [get_ports {third[4]}]
+set_property PACKAGE_PIN A5 [get_ports {third[5]}]
+set_property PACKAGE_PIN B5 [get_ports {third[6]}]
+
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets *]

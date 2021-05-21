@@ -1,14 +1,6 @@
-module keyboard (line, column, flag, out, clk_in);
+module keyboard (line, column, flag, out, clk);
 
-input  clk_in;
-logic [9:0] clk_counter;
-
-always @(posedge clk_in)
-    clk_counter <= clk_counter + 1;
-    
-logic clk;
-
-assign clk = clk_counter[9];
+input  clk;
 
 output [3:0] line; 
 input [3:0]column; 
@@ -38,7 +30,7 @@ always @ (posedge clk) begin
         out = i + 12;
         flag = 1'b1;
     end else begin
-        out = 4'b0000;
+        //out = 4'b0000;
         flag = 1'b0;
     end
 end
