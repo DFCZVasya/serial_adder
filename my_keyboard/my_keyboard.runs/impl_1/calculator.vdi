@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 21 22:28:37 2021
+# Process ID: 19724
+# Current directory: F:/vasyas projects/my_keyboard/my_keyboard.runs/impl_1
+# Command line: vivado.exe -log calculator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source calculator.tcl -notrace
+# Log file: F:/vasyas projects/my_keyboard/my_keyboard.runs/impl_1/calculator.vdi
+# Journal file: F:/vasyas projects/my_keyboard/my_keyboard.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source calculator.tcl -notrace
+Command: link_design -top calculator -part xc7a15tftg256-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a15tftg256-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 999.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: first_OBUF[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: flag_OBUF). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: line_OBUF[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: line_OBUF[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: line_OBUF[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: line_OBUF[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: p_0_in__0[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: p_0_in__0[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: p_0_in__0[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: p_0_in__0[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: p_0_in__0[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc:46]
+Finished Parsing XDC File [F:/vasyas projects/my_keyboard/my_keyboard.srcs/constrs_1/new/calculator_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 999.410 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a15t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net out_OBUF[0] has multiple drivers: board/out_reg[0]/Q, and out_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net out_OBUF[1] has multiple drivers: board/out_reg[1]/Q, and out_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net out_OBUF[2] has multiple drivers: board/out_reg[2]/Q, and out_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net out_OBUF[3] has multiple drivers: board/out_reg[3]/Q, and out_reg[3]/Q.
+INFO: [Project 1-461] DRC finished with 4 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 999.410 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri May 21 22:28:50 2021...
