@@ -1,9 +1,9 @@
 module display_controller(num, first, second, third);
 
-input logic[9:0] num;
-output logic [6:0] first;
-output logic [6:0] second;
-output logic [6:0] third;
+(* mark_debug = "true" *)input logic[9:0] num;
+(* mark_debug = "true" *)output logic [6:0] first;
+(* mark_debug = "true" *)output logic [6:0] second;
+(* mark_debug = "true" *)output logic [6:0] third;
 
 logic[3:0] num0 = 0;
 logic[3:0] num1 = 0;

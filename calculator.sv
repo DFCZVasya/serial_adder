@@ -13,12 +13,9 @@ output logic [6:0] third;
 input logic clk_in;
 //////////////////////////////
 
-logic prev_flag = 0;
 logic [9:0] out_num = 0;
 logic [9:0] num = 0;
 logic [9:0] answ = 0;
-
-reg [4:0] out = 0;
 
 display_controller display(num, first, second, third); 
 
@@ -42,59 +39,62 @@ assign clk = clk_counter[9];
 keyboard board(line, column, flag, out, clk);
 //////////////////////////////////
 
+(* mark_debug = "true" *)logic prev_flag;
+always @(posedge clk)
+   prev_flag <= flag;
 
+(* mark_debug = "true" *)logic key_pressed;
+assign key_pressed = !prev_flag & flag;
 
-always @(posedge flag) begin
+always @(posedge clk) begin
     next_state = state;
     case(state)
     FIRST_NUM:
-        if(out == 3) begin
+        if(out == 3 && key_pressed) begin
             next_state = SECOND_NUM;
             answ = num;
             num = 0;
         end
         else begin
-            if (out >= 0 && out <= 2) begin
+            if (out >= 0 && out <= 2 && key_pressed) begin
                 num = num * 10;
                 num = num + out + 1;
-            end else if (out >= 4 && out <= 6 ) begin
+            end else if (out >= 4 && out <= 6 && key_pressed) begin
                 num = num * 10;
                 num = num + out;
-            end else if (out >= 8 && out <= 10 ) begin
+            end else if (out >= 8 && out <= 10 && key_pressed) begin
                 num = num * 10;
                 num = num + out - 1;
-            end else if (out == 13) begin
+            end else if (out == 13 && key_pressed) begin
                 num = num * 10;
                 num = num + 0;
             end
         end
      SECOND_NUM:
-        if(out == 7) begin
+        if(out == 7 && key_pressed) begin
              next_state = EQUAL;
              num = answ + num;
-             out = 0;
          end
          else begin
-             if (out >= 0 && out <= 2) begin
+             if (out >= 0 && out <= 2 && key_pressed) begin
                 num = num * 10;
                 num = num + out + 1;
-            end else if (out >= 4 && out <= 6 ) begin
+            end else if (out >= 4 && out <= 6 && key_pressed) begin
                 num = num * 10;
                 num = num + out;
-            end else if (out >= 8 && out <= 10 ) begin
+            end else if (out >= 8 && out <= 10 && key_pressed) begin
                 num = num * 10;
                 num = num + out - 1;
-            end else if (out == 13) begin
+            end else if (out == 13 && key_pressed) begin
                 num = num * 10;
                 num = num + 0;
             end
          end
       EQUAL:
-        if(out) begin
+        if(key_pressed) begin
             next_state = FIRST_NUM;
             num = 0;
             answ = 0;
-            out = 0;
         end
         
       endcase
